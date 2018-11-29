@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+SC|Raleway:800|Roboto:900");
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+body {
+  background: #fc4a1a;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fc4a1a), to(#f7b733));
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+#desktop-menu {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  border-radius: 100%;
+  height: 80%;
+  width: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-color: white;
+  border-style: solid; }
+  #desktop-menu .dm-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: black; }
+    #desktop-menu .dm-circle p {
+      font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
+      margin: 0; }
+  #desktop-menu .dm-circle:nth-of-type(1) {
+    top: 50%;
+    left: 0; }
+  #desktop-menu .dm-circle:nth-of-type(2) {
+    top: 0;
+    left: 0; }
+  #desktop-menu .dm-circle:nth-of-type(3) {
+    top: 0;
+    left: 50%; }
+  #desktop-menu .dm-circle:nth-of-type(4) {
+    top: 50%;
+    left: 50%; }
+
+section {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; }
+
+section:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(1) h1 {
+      color: white;
+      font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
+      font-size: 500%;
+      font-weight: bolder; }
+    section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(1) .secondary-home-text {
+      color: white;
+      font-size: 500%;
+      font-weight: bolder; }
+  section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(2) {
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+@media (max-width: 768px) {
+  .secondary-home-text {
+    display: none; }
+
+  section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(1) h1 {
+    font-size: 400%; }
+  section:nth-of-type(1) .container:nth-of-type(1) .row:nth-of-type(1) .column-class:nth-of-type(1) .secondary-home-text {
+    font-size: 400%; } }
+
+/*# sourceMappingURL=styles.css.map */
