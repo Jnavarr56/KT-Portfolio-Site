@@ -21,17 +21,16 @@ body {
     background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fc4a1a, #f7b733); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-section {
-    height: 100%;
-    width: 100%;    
-    margin: 0 auto;
-}
-//Home-Landing-------------------------------------------
+section.container-fluid { height: 100%; }
+
+
+
+//Home-Landing-----------------------------------------------
 section:nth-of-type(1) {
-    @include flex-config(column, space-evenly, center);
+    @include flex-config(column, center, center);
     height: 100%;
     width: 100%;
-    .row {
+    .row:nth-of-type(1) {
         div {
             @include flex-config(row, center, center);
             h1 {
@@ -43,12 +42,26 @@ section:nth-of-type(1) {
             
         }
     }
+    .row:nth-of-type(2) {
+        div {
+            h3 {
+                color: rgba(255, 255, 255, 1);
+                padding: 40px 0 0 0;
+                font-family: $primary-font;
+                font-weight: bolder;
+                letter-spacing: 5px;
+                br { display: none; }
+            }
+        }
+    }
 }
-//-------------------------------------------------------
+
+
+
 
 
 @media (max-width: 991px ) {
-    //Home-Landing-------------------------------------------
+    //Home-Landing--
     section:nth-of-type(1) {
         .row {
             div { 
@@ -56,17 +69,34 @@ section:nth-of-type(1) {
             }
         }
     }
-    
-    //-------------------------------------------------------
+
 }
+//-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Mobile/Tablet
 @media (max-width: 768px) {
     //Home-Landing-------------------------------------------
     section:nth-of-type(1) {
-        .row {
-            div { 
-                h1 { font-size: 400%; max-width: 325px; }
+        .row:nth-of-type(1) {
+            div {  h1 { font-size: 400%; max-width: 325px; } }
+        }
+        .row:nth-of-type(2) {
+            height: 150px;
+            div {
+                text-align: center;
+                h3 { font-size: 95%; br { display: initial; } }
             }
         }
     }

@@ -8,13 +8,14 @@ html, body {
 
 body {
   background: #fc4a1a;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#fc4a1a), to(#f7b733));
   background: linear-gradient(to right, #fc4a1a, #f7b733);
-}
-section {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto; }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+section.container-fluid {
+  height: 100%; }
 
 section:nth-of-type(1) {
   display: -webkit-box;
@@ -24,15 +25,15 @@ section:nth-of-type(1) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
   width: 100%; }
-  section:nth-of-type(1) .row div {
+  section:nth-of-type(1) .row:nth-of-type(1) div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -46,18 +47,34 @@ section:nth-of-type(1) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    section:nth-of-type(1) .row div h1 {
+    section:nth-of-type(1) .row:nth-of-type(1) div h1 {
       color: white;
       font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
       font-size: 500%;
       font-weight: bolder; }
+  section:nth-of-type(1) .row:nth-of-type(2) div h3 {
+    color: white;
+    padding: 40px 0 0 0;
+    font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
+    font-weight: bolder;
+    letter-spacing: 5px; }
+    section:nth-of-type(1) .row:nth-of-type(2) div h3 br {
+      display: none; }
 
 @media (max-width: 991px) {
   section:nth-of-type(1) .row div h1 {
     max-width: 420px; } }
 @media (max-width: 768px) {
-  section:nth-of-type(1) .row div h1 {
+  section:nth-of-type(1) .row:nth-of-type(1) div h1 {
     font-size: 400%;
-    max-width: 325px; } }
+    max-width: 325px; }
+  section:nth-of-type(1) .row:nth-of-type(2) {
+    height: 150px; }
+    section:nth-of-type(1) .row:nth-of-type(2) div {
+      text-align: center; }
+      section:nth-of-type(1) .row:nth-of-type(2) div h3 {
+        font-size: 95%; }
+        section:nth-of-type(1) .row:nth-of-type(2) div h3 br {
+          display: initial; } }
 
 /*# sourceMappingURL=styles.css.map */
