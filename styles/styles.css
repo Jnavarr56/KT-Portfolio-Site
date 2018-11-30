@@ -64,6 +64,300 @@ section:nth-of-type(1) {
 @media (max-width: 991px) {
   section:nth-of-type(1) .row div h1 {
     max-width: 420px; } }
+.animatePhraseIn0 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.25s ease 0s forwards;
+          animation: AnimatePhraseIn 0.25s ease 0s forwards; }
+
+.animatePhraseIn1 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.35s ease 0s forwards;
+          animation: AnimatePhraseIn 0.35s ease 0s forwards; }
+
+.animatePhraseIn2 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.45s ease 0s forwards;
+          animation: AnimatePhraseIn 0.45s ease 0s forwards; }
+
+.animatePhraseIn3 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.55s ease 0s forwards;
+          animation: AnimatePhraseIn 0.55s ease 0s forwards; }
+
+.animatePhraseIn4 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.65s ease 0s forwards;
+          animation: AnimatePhraseIn 0.65s ease 0s forwards; }
+
+.animatePhraseIn5 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.75s ease 0s forwards;
+          animation: AnimatePhraseIn 0.75s ease 0s forwards; }
+
+.animatePhraseIn6 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.85s ease 0s forwards;
+          animation: AnimatePhraseIn 0.85s ease 0s forwards; }
+
+.animatePhraseIn7 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 0.95s ease 0s forwards;
+          animation: AnimatePhraseIn 0.95s ease 0s forwards; }
+
+.animatePhraseIn8 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.05s ease 0s forwards;
+          animation: AnimatePhraseIn 1.05s ease 0s forwards; }
+
+.animatePhraseIn9 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.15s ease 0s forwards;
+          animation: AnimatePhraseIn 1.15s ease 0s forwards; }
+
+.animatePhraseIn10 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.25s ease 0s forwards;
+          animation: AnimatePhraseIn 1.25s ease 0s forwards; }
+
+.animatePhraseIn11 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.35s ease 0s forwards;
+          animation: AnimatePhraseIn 1.35s ease 0s forwards; }
+
+.animatePhraseIn12 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.45s ease 0s forwards;
+          animation: AnimatePhraseIn 1.45s ease 0s forwards; }
+
+.animatePhraseIn13 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.55s ease 0s forwards;
+          animation: AnimatePhraseIn 1.55s ease 0s forwards; }
+
+.animatePhraseIn14 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.65s ease 0s forwards;
+          animation: AnimatePhraseIn 1.65s ease 0s forwards; }
+
+.animatePhraseIn15 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.75s ease 0s forwards;
+          animation: AnimatePhraseIn 1.75s ease 0s forwards; }
+
+.animatePhraseIn16 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.85s ease 0s forwards;
+          animation: AnimatePhraseIn 1.85s ease 0s forwards; }
+
+.animatePhraseIn17 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 1.95s ease 0s forwards;
+          animation: AnimatePhraseIn 1.95s ease 0s forwards; }
+
+.animatePhraseIn18 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.05s ease 0s forwards;
+          animation: AnimatePhraseIn 2.05s ease 0s forwards; }
+
+.animatePhraseIn19 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.15s ease 0s forwards;
+          animation: AnimatePhraseIn 2.15s ease 0s forwards; }
+
+.animatePhraseIn20 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.25s ease 0s forwards;
+          animation: AnimatePhraseIn 2.25s ease 0s forwards; }
+
+.animatePhraseIn21 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.35s ease 0s forwards;
+          animation: AnimatePhraseIn 2.35s ease 0s forwards; }
+
+.animatePhraseIn22 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.45s ease 0s forwards;
+          animation: AnimatePhraseIn 2.45s ease 0s forwards; }
+
+.animatePhraseIn23 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.55s ease 0s forwards;
+          animation: AnimatePhraseIn 2.55s ease 0s forwards; }
+
+.animatePhraseIn24 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.65s ease 0s forwards;
+          animation: AnimatePhraseIn 2.65s ease 0s forwards; }
+
+.animatePhraseIn25 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.75s ease 0s forwards;
+          animation: AnimatePhraseIn 2.75s ease 0s forwards; }
+
+.animatePhraseIn26 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.85s ease 0s forwards;
+          animation: AnimatePhraseIn 2.85s ease 0s forwards; }
+
+.animatePhraseIn27 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 2.95s ease 0s forwards;
+          animation: AnimatePhraseIn 2.95s ease 0s forwards; }
+
+.animatePhraseIn28 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 3.05s ease 0s forwards;
+          animation: AnimatePhraseIn 3.05s ease 0s forwards; }
+
+.animatePhraseIn29 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 3.15s ease 0s forwards;
+          animation: AnimatePhraseIn 3.15s ease 0s forwards; }
+
+.animatePhraseIn30 {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: .20;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: AnimatePhraseIn 3.25s ease 0s forwards;
+          animation: AnimatePhraseIn 3.25s ease 0s forwards; }
+
+@-webkit-keyframes AnimatePhraseIn {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px); } }
+
+@keyframes AnimatePhraseIn {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px); } }
 @media (max-width: 768px) {
   section:nth-of-type(1) .row:nth-of-type(1) div h1 {
     font-size: 400%;

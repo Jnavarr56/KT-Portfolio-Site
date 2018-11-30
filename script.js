@@ -1,3 +1,5 @@
+
+
 class Kat { 
     constructor() {
         this.animPhrases = [];
@@ -16,12 +18,21 @@ class Kat {
             phraseIndex = 1;
 
         phraseElement.html( self.animPhrases[ 0 ].toUpperCase());
-
         
         setInterval( function() {
-            phraseElement.html( self.animPhrases[ phraseIndex ].toUpperCase() );
+            phraseElement.html( '' );
+            let str = self.animPhrases[ phraseIndex ].toUpperCase(),
+                newHTML = '';
+
+
+            for ( let c = 0; c < str.length; c ++ ) {
+                newHTML += `<span class="animatePhraseIn${c}">${str[c]}</span>`;
+            }
+
+
+            phraseElement.html( newHTML );
             phraseIndex === self.animPhrases.length - 1 ? phraseIndex = 0 : phraseIndex ++;
-        }, 2000 );
+        }, 3250 );
         
 
 
