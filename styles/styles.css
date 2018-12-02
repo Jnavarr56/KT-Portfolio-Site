@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+SC|Raleway:800|Roboto:900");
 html, body {
-  height: 100vh;
+  height: 400vh;
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: scroll; }
 
 body {
   background: #fc4a1a;
@@ -15,7 +15,8 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 section.container-fluid {
-  height: 100%; }
+  height: 100vh;
+  border-style: solid; }
 
 section:nth-of-type(1) {
   display: -webkit-box;
@@ -31,7 +32,6 @@ section:nth-of-type(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   width: 100%; }
   section:nth-of-type(1) .row:nth-of-type(1) div {
     display: -webkit-box;
@@ -52,7 +52,7 @@ section:nth-of-type(1) {
       font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
       font-size: 500%;
       font-weight: bolder; }
-  section:nth-of-type(1) .row:nth-of-type(2) #bounce-text h3, section:nth-of-type(1) .row:nth-of-type(2) #bounce-text span {
+  section:nth-of-type(1) .row:nth-of-type(2) #bounceText h3, section:nth-of-type(1) .row:nth-of-type(2) #bounceText span {
     color: white;
     padding: 40px 0 0 0;
     font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
@@ -75,6 +75,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 0.25s linear 0s forwards;
           animation: AnimatePhraseIn 0.25s linear 0s forwards; }
 
+.animatePhraseOut0 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 2.325s ease 0s forwards;
+          animation: AnimatePhraseOut 2.325s ease 0s forwards; }
+
 .animatePhraseIn1 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -86,6 +91,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 0.325s linear 0s forwards;
           animation: AnimatePhraseIn 0.325s linear 0s forwards; }
+
+.animatePhraseOut1 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 2.25s ease 0s forwards;
+          animation: AnimatePhraseOut 2.25s ease 0s forwards; }
 
 .animatePhraseIn2 {
   -webkit-transform: rotateX(-135deg);
@@ -99,6 +109,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 0.4s linear 0s forwards;
           animation: AnimatePhraseIn 0.4s linear 0s forwards; }
 
+.animatePhraseOut2 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 2.175s ease 0s forwards;
+          animation: AnimatePhraseOut 2.175s ease 0s forwards; }
+
 .animatePhraseIn3 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -110,6 +125,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 0.475s linear 0s forwards;
           animation: AnimatePhraseIn 0.475s linear 0s forwards; }
+
+.animatePhraseOut3 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 2.1s ease 0s forwards;
+          animation: AnimatePhraseOut 2.1s ease 0s forwards; }
 
 .animatePhraseIn4 {
   -webkit-transform: rotateX(-135deg);
@@ -123,6 +143,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 0.55s linear 0s forwards;
           animation: AnimatePhraseIn 0.55s linear 0s forwards; }
 
+.animatePhraseOut4 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 2.025s ease 0s forwards;
+          animation: AnimatePhraseOut 2.025s ease 0s forwards; }
+
 .animatePhraseIn5 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -134,6 +159,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 0.625s linear 0s forwards;
           animation: AnimatePhraseIn 0.625s linear 0s forwards; }
+
+.animatePhraseOut5 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.95s ease 0s forwards;
+          animation: AnimatePhraseOut 1.95s ease 0s forwards; }
 
 .animatePhraseIn6 {
   -webkit-transform: rotateX(-135deg);
@@ -147,6 +177,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 0.7s linear 0s forwards;
           animation: AnimatePhraseIn 0.7s linear 0s forwards; }
 
+.animatePhraseOut6 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.875s ease 0s forwards;
+          animation: AnimatePhraseOut 1.875s ease 0s forwards; }
+
 .animatePhraseIn7 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -158,6 +193,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 0.775s linear 0s forwards;
           animation: AnimatePhraseIn 0.775s linear 0s forwards; }
+
+.animatePhraseOut7 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.8s ease 0s forwards;
+          animation: AnimatePhraseOut 1.8s ease 0s forwards; }
 
 .animatePhraseIn8 {
   -webkit-transform: rotateX(-135deg);
@@ -171,6 +211,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 0.85s linear 0s forwards;
           animation: AnimatePhraseIn 0.85s linear 0s forwards; }
 
+.animatePhraseOut8 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.725s ease 0s forwards;
+          animation: AnimatePhraseOut 1.725s ease 0s forwards; }
+
 .animatePhraseIn9 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -182,6 +227,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 0.925s linear 0s forwards;
           animation: AnimatePhraseIn 0.925s linear 0s forwards; }
+
+.animatePhraseOut9 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.65s ease 0s forwards;
+          animation: AnimatePhraseOut 1.65s ease 0s forwards; }
 
 .animatePhraseIn10 {
   -webkit-transform: rotateX(-135deg);
@@ -195,6 +245,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1s linear 0s forwards;
           animation: AnimatePhraseIn 1s linear 0s forwards; }
 
+.animatePhraseOut10 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.575s ease 0s forwards;
+          animation: AnimatePhraseOut 1.575s ease 0s forwards; }
+
 .animatePhraseIn11 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -206,6 +261,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.075s linear 0s forwards;
           animation: AnimatePhraseIn 1.075s linear 0s forwards; }
+
+.animatePhraseOut11 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.5s ease 0s forwards;
+          animation: AnimatePhraseOut 1.5s ease 0s forwards; }
 
 .animatePhraseIn12 {
   -webkit-transform: rotateX(-135deg);
@@ -219,6 +279,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.15s linear 0s forwards;
           animation: AnimatePhraseIn 1.15s linear 0s forwards; }
 
+.animatePhraseOut12 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.425s ease 0s forwards;
+          animation: AnimatePhraseOut 1.425s ease 0s forwards; }
+
 .animatePhraseIn13 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -230,6 +295,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.225s linear 0s forwards;
           animation: AnimatePhraseIn 1.225s linear 0s forwards; }
+
+.animatePhraseOut13 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.35s ease 0s forwards;
+          animation: AnimatePhraseOut 1.35s ease 0s forwards; }
 
 .animatePhraseIn14 {
   -webkit-transform: rotateX(-135deg);
@@ -243,6 +313,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.3s linear 0s forwards;
           animation: AnimatePhraseIn 1.3s linear 0s forwards; }
 
+.animatePhraseOut14 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.275s ease 0s forwards;
+          animation: AnimatePhraseOut 1.275s ease 0s forwards; }
+
 .animatePhraseIn15 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -254,6 +329,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.375s linear 0s forwards;
           animation: AnimatePhraseIn 1.375s linear 0s forwards; }
+
+.animatePhraseOut15 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.2s ease 0s forwards;
+          animation: AnimatePhraseOut 1.2s ease 0s forwards; }
 
 .animatePhraseIn16 {
   -webkit-transform: rotateX(-135deg);
@@ -267,6 +347,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.45s linear 0s forwards;
           animation: AnimatePhraseIn 1.45s linear 0s forwards; }
 
+.animatePhraseOut16 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.125s ease 0s forwards;
+          animation: AnimatePhraseOut 1.125s ease 0s forwards; }
+
 .animatePhraseIn17 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -278,6 +363,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.525s linear 0s forwards;
           animation: AnimatePhraseIn 1.525s linear 0s forwards; }
+
+.animatePhraseOut17 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 1.05s ease 0s forwards;
+          animation: AnimatePhraseOut 1.05s ease 0s forwards; }
 
 .animatePhraseIn18 {
   -webkit-transform: rotateX(-135deg);
@@ -291,6 +381,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.6s linear 0s forwards;
           animation: AnimatePhraseIn 1.6s linear 0s forwards; }
 
+.animatePhraseOut18 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.975s ease 0s forwards;
+          animation: AnimatePhraseOut 0.975s ease 0s forwards; }
+
 .animatePhraseIn19 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -302,6 +397,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.675s linear 0s forwards;
           animation: AnimatePhraseIn 1.675s linear 0s forwards; }
+
+.animatePhraseOut19 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.9s ease 0s forwards;
+          animation: AnimatePhraseOut 0.9s ease 0s forwards; }
 
 .animatePhraseIn20 {
   -webkit-transform: rotateX(-135deg);
@@ -315,6 +415,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.75s linear 0s forwards;
           animation: AnimatePhraseIn 1.75s linear 0s forwards; }
 
+.animatePhraseOut20 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.825s ease 0s forwards;
+          animation: AnimatePhraseOut 0.825s ease 0s forwards; }
+
 .animatePhraseIn21 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -326,6 +431,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.825s linear 0s forwards;
           animation: AnimatePhraseIn 1.825s linear 0s forwards; }
+
+.animatePhraseOut21 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.75s ease 0s forwards;
+          animation: AnimatePhraseOut 0.75s ease 0s forwards; }
 
 .animatePhraseIn22 {
   -webkit-transform: rotateX(-135deg);
@@ -339,6 +449,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 1.9s linear 0s forwards;
           animation: AnimatePhraseIn 1.9s linear 0s forwards; }
 
+.animatePhraseOut22 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.675s ease 0s forwards;
+          animation: AnimatePhraseOut 0.675s ease 0s forwards; }
+
 .animatePhraseIn23 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -350,6 +465,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 1.975s linear 0s forwards;
           animation: AnimatePhraseIn 1.975s linear 0s forwards; }
+
+.animatePhraseOut23 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.6s ease 0s forwards;
+          animation: AnimatePhraseOut 0.6s ease 0s forwards; }
 
 .animatePhraseIn24 {
   -webkit-transform: rotateX(-135deg);
@@ -363,6 +483,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 2.05s linear 0s forwards;
           animation: AnimatePhraseIn 2.05s linear 0s forwards; }
 
+.animatePhraseOut24 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.525s ease 0s forwards;
+          animation: AnimatePhraseOut 0.525s ease 0s forwards; }
+
 .animatePhraseIn25 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -374,6 +499,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 2.125s linear 0s forwards;
           animation: AnimatePhraseIn 2.125s linear 0s forwards; }
+
+.animatePhraseOut25 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.45s ease 0s forwards;
+          animation: AnimatePhraseOut 0.45s ease 0s forwards; }
 
 .animatePhraseIn26 {
   -webkit-transform: rotateX(-135deg);
@@ -387,6 +517,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 2.2s linear 0s forwards;
           animation: AnimatePhraseIn 2.2s linear 0s forwards; }
 
+.animatePhraseOut26 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.375s ease 0s forwards;
+          animation: AnimatePhraseOut 0.375s ease 0s forwards; }
+
 .animatePhraseIn27 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -398,6 +533,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 2.275s linear 0s forwards;
           animation: AnimatePhraseIn 2.275s linear 0s forwards; }
+
+.animatePhraseOut27 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.3s ease 0s forwards;
+          animation: AnimatePhraseOut 0.3s ease 0s forwards; }
 
 .animatePhraseIn28 {
   -webkit-transform: rotateX(-135deg);
@@ -411,6 +551,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 2.35s linear 0s forwards;
           animation: AnimatePhraseIn 2.35s linear 0s forwards; }
 
+.animatePhraseOut28 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.225s ease 0s forwards;
+          animation: AnimatePhraseOut 0.225s ease 0s forwards; }
+
 .animatePhraseIn29 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -423,6 +568,11 @@ section:nth-of-type(1) {
   -webkit-animation: AnimatePhraseIn 2.425s linear 0s forwards;
           animation: AnimatePhraseIn 2.425s linear 0s forwards; }
 
+.animatePhraseOut29 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.15s ease 0s forwards;
+          animation: AnimatePhraseOut 0.15s ease 0s forwards; }
+
 .animatePhraseIn30 {
   -webkit-transform: rotateX(-135deg);
           transform: rotateX(-135deg);
@@ -434,6 +584,11 @@ section:nth-of-type(1) {
           transform-origin: center 100%;
   -webkit-animation: AnimatePhraseIn 2.5s linear 0s forwards;
           animation: AnimatePhraseIn 2.5s linear 0s forwards; }
+
+.animatePhraseOut30 {
+  display: inline-block;
+  -webkit-animation: AnimatePhraseOut 0.075s ease 0s forwards;
+          animation: AnimatePhraseOut 0.075s ease 0s forwards; }
 
 @-webkit-keyframes AnimatePhraseIn {
   100% {
@@ -450,172 +605,92 @@ section:nth-of-type(1) {
             filter: blur(0px);
     -webkit-transform: rotateX(3600deg);
             transform: rotateX(3600deg); } }
-.animatePhraseOut0 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 2.325s ease 0s forwards;
-          animation: AnimatePhraseOut 2.325s ease 0s forwards; }
-
-.animatePhraseOut1 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 2.25s ease 0s forwards;
-          animation: AnimatePhraseOut 2.25s ease 0s forwards; }
-
-.animatePhraseOut2 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 2.175s ease 0s forwards;
-          animation: AnimatePhraseOut 2.175s ease 0s forwards; }
-
-.animatePhraseOut3 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 2.1s ease 0s forwards;
-          animation: AnimatePhraseOut 2.1s ease 0s forwards; }
-
-.animatePhraseOut4 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 2.025s ease 0s forwards;
-          animation: AnimatePhraseOut 2.025s ease 0s forwards; }
-
-.animatePhraseOut5 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.95s ease 0s forwards;
-          animation: AnimatePhraseOut 1.95s ease 0s forwards; }
-
-.animatePhraseOut6 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.875s ease 0s forwards;
-          animation: AnimatePhraseOut 1.875s ease 0s forwards; }
-
-.animatePhraseOut7 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.8s ease 0s forwards;
-          animation: AnimatePhraseOut 1.8s ease 0s forwards; }
-
-.animatePhraseOut8 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.725s ease 0s forwards;
-          animation: AnimatePhraseOut 1.725s ease 0s forwards; }
-
-.animatePhraseOut9 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.65s ease 0s forwards;
-          animation: AnimatePhraseOut 1.65s ease 0s forwards; }
-
-.animatePhraseOut10 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.575s ease 0s forwards;
-          animation: AnimatePhraseOut 1.575s ease 0s forwards; }
-
-.animatePhraseOut11 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.5s ease 0s forwards;
-          animation: AnimatePhraseOut 1.5s ease 0s forwards; }
-
-.animatePhraseOut12 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.425s ease 0s forwards;
-          animation: AnimatePhraseOut 1.425s ease 0s forwards; }
-
-.animatePhraseOut13 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.35s ease 0s forwards;
-          animation: AnimatePhraseOut 1.35s ease 0s forwards; }
-
-.animatePhraseOut14 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.275s ease 0s forwards;
-          animation: AnimatePhraseOut 1.275s ease 0s forwards; }
-
-.animatePhraseOut15 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.2s ease 0s forwards;
-          animation: AnimatePhraseOut 1.2s ease 0s forwards; }
-
-.animatePhraseOut16 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.125s ease 0s forwards;
-          animation: AnimatePhraseOut 1.125s ease 0s forwards; }
-
-.animatePhraseOut17 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 1.05s ease 0s forwards;
-          animation: AnimatePhraseOut 1.05s ease 0s forwards; }
-
-.animatePhraseOut18 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.975s ease 0s forwards;
-          animation: AnimatePhraseOut 0.975s ease 0s forwards; }
-
-.animatePhraseOut19 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.9s ease 0s forwards;
-          animation: AnimatePhraseOut 0.9s ease 0s forwards; }
-
-.animatePhraseOut20 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.825s ease 0s forwards;
-          animation: AnimatePhraseOut 0.825s ease 0s forwards; }
-
-.animatePhraseOut21 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.75s ease 0s forwards;
-          animation: AnimatePhraseOut 0.75s ease 0s forwards; }
-
-.animatePhraseOut22 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.675s ease 0s forwards;
-          animation: AnimatePhraseOut 0.675s ease 0s forwards; }
-
-.animatePhraseOut23 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.6s ease 0s forwards;
-          animation: AnimatePhraseOut 0.6s ease 0s forwards; }
-
-.animatePhraseOut24 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.525s ease 0s forwards;
-          animation: AnimatePhraseOut 0.525s ease 0s forwards; }
-
-.animatePhraseOut25 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.45s ease 0s forwards;
-          animation: AnimatePhraseOut 0.45s ease 0s forwards; }
-
-.animatePhraseOut26 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.375s ease 0s forwards;
-          animation: AnimatePhraseOut 0.375s ease 0s forwards; }
-
-.animatePhraseOut27 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.3s ease 0s forwards;
-          animation: AnimatePhraseOut 0.3s ease 0s forwards; }
-
-.animatePhraseOut28 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.225s ease 0s forwards;
-          animation: AnimatePhraseOut 0.225s ease 0s forwards; }
-
-.animatePhraseOut29 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.15s ease 0s forwards;
-          animation: AnimatePhraseOut 0.15s ease 0s forwards; }
-
-.animatePhraseOut30 {
-  display: inline-block;
-  -webkit-animation: AnimatePhraseOut 0.075s ease 0s forwards;
-          animation: AnimatePhraseOut 0.075s ease 0s forwards; }
-
 @-webkit-keyframes AnimatePhraseOut {
   100% {
     opacity: 0;
     -webkit-filter: blur(20px);
             filter: blur(20px); } }
-
 @keyframes AnimatePhraseOut {
   100% {
     opacity: 0;
     -webkit-filter: blur(20px);
             filter: blur(20px); } }
+#desktopNav {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  height: 1%;
+  width: 60%;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white; }
+  #desktopNav div {
+    background: white;
+    height: 125px;
+    width: 125px;
+    border: 5px solid white;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #desktopNav div p {
+      margin: 0;
+      padding: 0;
+      font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
+      font-size: 90%;
+      text-transform: uppercase;
+      color: blue; }
+    #desktopNav div:hover {
+      background: blue; }
+      #desktopNav div:hover p {
+        color: white; }
+
+@-webkit-keyframes MenuToSide {
+  100% {
+    width: 40%;
+    top: 15%;
+    left: calc( 100% - 200px );
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }
+
+@keyframes MenuToSide {
+  100% {
+    width: 40%;
+    top: 15%;
+    left: calc( 100% - 200px );
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }
+@-webkit-keyframes MenuWordsToSide {
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); } }
+@keyframes MenuWordsToSide {
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); } }
 @media (max-width: 768px) {
   section:nth-of-type(1) .row:nth-of-type(1) div h1 {
     font-size: 400%;
