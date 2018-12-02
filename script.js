@@ -21,7 +21,6 @@ class Kat {
         this.phraseTextIDMobile = phraseElementIDMobile;
     }
     phraseAnimate() {
-
         let self = this,
             phraseElement = $( '#' + this.phraseTextID ),
             started = false,
@@ -37,25 +36,28 @@ class Kat {
             );
             phraseIndex === self.animPhrases.length - 1 ? phraseIndex = 0: phraseIndex ++;
             
-            //+ ( firstSw ? 1500 : 0 ) 
-
             setTimeout( function() {  
-                firstSw = true;
+                
+                //recursively call this function again after waiting the duration of the animation + 1.5s
+
+                for ( let c = 0; c < phraseElement.children().length; c ++ ) {
+
+                    phraseElement.children().eq( c ).removeClass( `animatePhraseIn${ c }` );
+                    phraseElement.children().eq( c ).addClass( `animatePhraseOut${ c }` );
+                } 
+
+            
+                setTimeout( function() {
+                    firstSw = true;
+                    writeSpinEff();
+                }, 85 + ( firstSw ? phraseElement.children().length * 75 : 0 )  );
                 
                 
-                writeSpinEff();
-            }, wait + ( firstSw ? 1500 : 0 )  );
+            }, wait + ( firstSw ? 750 : 0 )  );
         }
         
         writeSpinEff();
         
-        
-   
-        
-
-
-
-
 
     }
 

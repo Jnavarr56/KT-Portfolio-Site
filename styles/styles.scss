@@ -92,13 +92,13 @@ section:nth-of-type(1) {
 @for $i from 0 through 30 {
     .animatePhraseOut#{$i} {
         display: inline-block;
-        animation: AnimatePhraseOut #{ .25 + ( $i * .05 ) }s linear 0s forwards; 
+        animation: AnimatePhraseOut #{ .075 + ( 30 - $i ) * .075 }s ease 0s forwards; 
     }
 }
 @keyframes AnimatePhraseOut {
     100% {
         opacity: 0;
-        filter: blur(10px);
+        filter: blur(20px);
     }
 }
 
