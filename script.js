@@ -1,4 +1,13 @@
-
+function phraseHTML ( str, el ) { 
+    str = str.toUpperCase();
+    el.empty();
+    let newHTML = '';
+    for ( let c = 0; c < str.length; c ++ ) {
+        let newChar = str[c] === ' ' ? '&nbsp;' : str[c];
+        newHTML += `<span class="animatePhraseIn${c}">${newChar}</span>`;
+    }
+    return newHTML;
+}
 
 class Kat { 
     constructor() {
@@ -12,27 +21,36 @@ class Kat {
         this.phraseTextIDMobile = phraseElementIDMobile;
     }
     phraseAnimate() {
-        
+
         let self = this,
             phraseElement = $( '#' + this.phraseTextID ),
-            phraseIndex = 1;
+            started = false,
+            firstSw = false,
+            phraseIndex = 0;
 
-        phraseElement.html( self.animPhrases[ 0 ].toUpperCase());
+        function writeSpinEff()  {            
+            const wait = started ? 250 + ( ( self.animPhrases[ phraseIndex ].length ) * 75 ) : 0;
+            started = true;
+
+            phraseElement.html( 
+                phraseHTML( self.animPhrases[ phraseIndex ], phraseElement )
+            );
+            phraseIndex === self.animPhrases.length - 1 ? phraseIndex = 0: phraseIndex ++;
+            
+            //+ ( firstSw ? 1500 : 0 ) 
+
+            setTimeout( function() {  
+                firstSw = true;
+                
+                
+                writeSpinEff();
+            }, wait + ( firstSw ? 1500 : 0 )  );
+        }
         
-        setInterval( function() {
-            phraseElement.html( '' );
-            let str = self.animPhrases[ phraseIndex ].toUpperCase(),
-                newHTML = '';
-
-
-            for ( let c = 0; c < str.length; c ++ ) {
-                newHTML += `<span class="animatePhraseIn${c}">${str[c]}</span>`;
-            }
-
-
-            phraseElement.html( newHTML );
-            phraseIndex === self.animPhrases.length - 1 ? phraseIndex = 0 : phraseIndex ++;
-        }, 3250 );
+        writeSpinEff();
+        
+        
+   
         
 
 
@@ -40,13 +58,11 @@ class Kat {
 
 
     }
-    phraseAnimateMobile() {
-        //console.log( 'Test animate 2' );
-    }
+
 }
 var phrases = [
+    'Polish Polyglot',
     'Junior Developer',
-    'Polish Speaker',
     'Coffee Addict',
     'Former English Teacher',
     'Amateur Sociologist',
@@ -59,7 +75,7 @@ $( document ).ready( function() {
     var Katrina = new Kat();
     Katrina.setPhraseAnimationElements( phrases, 'bounce-text', 'bounce-text-mobile' );
     Katrina.phraseAnimate();
-    Katrina.phraseAnimateMobile();
+    
     
     
     

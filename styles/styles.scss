@@ -43,14 +43,14 @@ section:nth-of-type(1) {
         }
     }
     .row:nth-of-type(2) {
-        div {
-            h3 {
+        #bounce-text {
+            h3, span {
                 color: rgba(255, 255, 255, 1);
                 padding: 40px 0 0 0;
                 font-family: $primary-font;
                 font-weight: bolder;
                 letter-spacing: 5px;
-                br { display: none; }
+                font-size: 120%;
             }
         }
     }
@@ -72,19 +72,36 @@ section:nth-of-type(1) {
 
 @for $i from 0 through 30 {
     .animatePhraseIn#{$i} { 
-        transform: scale( .20 );
-        opacity: .20;
-        filter:blur(10px);
-        animation: AnimatePhraseIn #{ .25 + ( $i * .10 ) }s ease 0s forwards; 
+        transform: rotateX(-135deg);
+        opacity: .50;
+        filter: blur(3px);
+        display: inline-block;
+        transform-origin: center 100%;
+        animation: AnimatePhraseIn #{ .25 + ( $i * .075 ) }s linear 0s forwards; 
     }
 }
 @keyframes AnimatePhraseIn {
-    100% { 
-        transform: scale( 1 ); 
-        opacity:  1 ; 
-        filter:blur(0px);
+    100% {
+        opacity:  1; 
+        filter: blur(0px);
+        transform: rotateX(3600deg);
     }
 }
+
+
+@for $i from 0 through 30 {
+    .animatePhraseOut#{$i} {
+        display: inline-block;
+        animation: AnimatePhraseOut #{ .25 + ( $i * .05 ) }s linear 0s forwards; 
+    }
+}
+@keyframes AnimatePhraseOut {
+    100% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
 
 
 
@@ -114,7 +131,7 @@ section:nth-of-type(1) {
             height: 150px;
             div {
                 text-align: center;
-                h3 { font-size: 95%; br { display: initial; } }
+                h3 { font-size: 80%; br { display: initial; } }
             }
         }
     }
