@@ -4,7 +4,8 @@ html, body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: scroll; }
+  overflow: scroll;
+  scroll-behavior: smooth; }
 
 body {
   background: #fc4a1a;
@@ -621,6 +622,7 @@ section:nth-of-type(1) {
   left: 20%;
   height: 1%;
   width: 60%;
+  z-index: 1000;
   -webkit-transform-origin: left center;
           transform-origin: left center;
   display: -webkit-box;
@@ -635,10 +637,8 @@ section:nth-of-type(1) {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background: white; }
+          align-items: center; }
   #desktopNav div {
-    background: white;
     height: 125px;
     width: 125px;
     border: 5px solid white;
@@ -662,11 +662,11 @@ section:nth-of-type(1) {
       font-family: "Raleway", "Roboto", "Montserrat", "Noto Sans SC", "Helvetica";
       font-size: 90%;
       text-transform: uppercase;
-      color: blue; }
+      color: white; }
     #desktopNav div:hover {
-      background: blue; }
+      background: white; }
       #desktopNav div:hover p {
-        color: white; }
+        color: blue; }
 
 @-webkit-keyframes MenuToSide {
   100% {

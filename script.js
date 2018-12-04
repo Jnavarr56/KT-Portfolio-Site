@@ -8,23 +8,6 @@ function phraseHTML ( str, el, animClass ) {
     }
     return newHTML;
 }
-function toggleAnimEls ( elsArray, run = true, addclass = false, menuClass, menuWordsClass ) {
-
-    let action = run ? 'running' : 'paused';
-
-    $.each( elsArray, function() {
-        let item = this;
-        $( this ).each( function() {
-            if ( addclass ) {
-                
-                if ( $( item ).length > 1 ) { $( this ).addClass( menuWordsClass ); }
-                else { $( this ).addClass( menuClass );} 
-              
-            }
-            $( this ).css( 'animation-play-state', action );
-        } );
-    } );
-}
 
 class Kat { 
     constructor() {
@@ -42,21 +25,26 @@ class Kat {
         this.desktopNavWordsClass = null;
         this.allNav = [];
         this.menuAnimTrack = {} 
+        this.origLeft = null;
+        this.origWidth = null;
         
     }
     setPhraseAnimationElements( phrasesArray, phraseElementID, phraseInClass, phraseOutClass) {
+
         this.animPhrases = phrasesArray;
         this.phraseTextElement = $( '#' + phraseElementID );
         this.phraseInAnimClass = phraseInClass,
         this.phraseOutAnimClass = phraseOutClass;
     }
     enablePhraseAnimate() {  
+
         let self = this,
             started = false,
             firstSw = false,
             phraseIndex = 0;
 
-        function writeSpinEff()  {            
+        function writeSpinEff()  {     
+
             const wait = started ? 250 + ( ( self.animPhrases[ phraseIndex ].length ) * 75 ) : 0;
             started = true;
 
@@ -87,31 +75,37 @@ class Kat {
         writeSpinEff();
     }
     setDesktopNavAnimationElements( desktopNavElID, menuAnimationClass, menuWordsAnimationClass, menuWordsClass ) {
+
         this.desktopNav = $( '#' + desktopNavElID );
         this.desktopNavAnimClass = menuAnimationClass;
         this.desktopNavWordsAnimClass = menuWordsAnimationClass;
         this.desktopNavWordsClass = $( '.' + menuWordsClass );
+
         this.allNav = [ 
             this.desktopNav, 
             this.desktopNavWordsClass 
         ];
-
-        toggleAnimEls( 
-            this.allNav,
-            false,
-            true,
-            menuAnimationClass,
-            menuWordsAnimationClass
-        )
-
+        
+        this.origLeft = Number( this.desktopNav.css( 'left' ).match( /[^px]+/ )[0] ) / $( 'body' ).innerWidth();
+        this.origWidth = Number( this.desktopNav.css( 'width' ).match( /[^px]+/ )[0] ) / $( 'body' ).innerWidth();
     }
     enableDesktopNavAnimate() {
+
         let self = this,
             moving = false;
 
+        self.desktopNav.children().each( function(i) {
+            $( this ).click( function() {
+                let scrollToID = '#' + $( this ).children().eq(0).text().toLowerCase();
+
+                console.log($(scrollToID).offset().top);
+                $(window).scrollTop($(scrollToID).offset().top);
+
+            } );
+        } );
+
         $( window ).scroll( function () {
 
-        
                 let bottomLanding =  $( 'section' ).eq( 0 ).offset().top + $( 'section' ).eq( 0 ).height(),
                 goingDownInHome = 
                     $( this ).scrollTop() > self.scrollPos && 
@@ -125,64 +119,58 @@ class Kat {
                 let distToHomeEnd =  $( this ).scrollTop() / bottomLanding;
 
                 
-
-                //toggleAnimEls( self.allNav, true );
                 if ( goingDownInHome || goingUpInHome ) {
-                    console.log( distToHomeEnd + '%' );
+                    
+                    let dimChange = ( ( $( window ).innerHeight()*.60 ) - ( self.origWidth * $(window).width() ) ) * distToHomeEnd;
 
-                    let rotationDegreesToCurrent = 90 * distToHomeEnd, leftDistToCurrent;
-
-                    if ( goingDownInHome ) {
-                        leftDistToCurrent = 
-                        ( 1 - ( ( $( '#desktopNav' ).children().eq( 0 ).height() * 1.5 ) / $( 'body' ).innerWidth() ) ) *
-                        distToHomeEnd;
-                    }
-
-                    else {
-                        leftDistToCurrent = 
-                           ( ( 1 - ( $( '#desktopNav' ).width() / $( 'body' ).innerWidth() ) ) / 2 ) * distToHomeEnd;
-                    }
-           
+                    let rotationDegreesToCurrent = 90 * distToHomeEnd,
+                        leftDistToCurrent =
+                            ( ( 1 - ( ( self.desktopNav.children().eq( 0 ).height() * 1.5 ) / $( 'body' ).innerWidth() ) ) * 
+                            distToHomeEnd ) + ( ( self.origLeft ) *  ( 1 - distToHomeEnd ) );
 
                     self.menuAnimTrack = {
                         menu: rotationDegreesToCurrent,
                         words: rotationDegreesToCurrent * -1,
                         left: leftDistToCurrent
                     } 
+
+                    self.desktopNav.css( 
+                        {
+                            'transform' : `rotate(${ self.menuAnimTrack.menu }deg)`,
+                            'left' : `${ self.menuAnimTrack.left * 100 }%`,
+                            'width' :  `${
+         
+                               ( ( ( ( self.origWidth * $( window ).innerWidth() ) + dimChange ) / 
+                               $( window ).innerWidth() ) * 100 )
+                               + '%'
+                            }`
+                        } 
+                    );
+    
+                    self.desktopNavWordsClass.css( 
+                        {
+                            'transform' : `rotate(${ self.menuAnimTrack.words }deg)`
+                        } 
+                    );
+    
+                    $( 'section' ).eq( 0 ).css( 'opacity', `${ 1 - ( distToHomeEnd * 3 ) }`);
+
                 }
                 if ( pastHome && self.menuAnimTrack.menu !== 90 ) {
+
                     self.menuAnimTrack = {
                         menu: 90,
                         words: -90,
-                        left: ( 1 - ( ( $( '#desktopNav' ).children().eq( 0 ).height() * 1.5 ) / $( 'body' ).innerWidth() ) )
+                        left: ( 1 - ( ( self.desktopNav.children().eq( 0 ).height() * 1.5 ) / $( 'body' ).innerWidth() ) )
                     }
+                    
                 }
 
-                self.desktopNav.css( 
-                    {
-                        'transform' : `rotate(${ self.menuAnimTrack.menu }deg)`,
-                        'left' : `${ self.menuAnimTrack.left * 100 }%`
-                    } 
-                );
+                else {
 
-                self.desktopNavWordsClass.css( 
-                    {
-                        'transform' : `rotate(${ self.menuAnimTrack.words }deg)`
-                    } 
-                );
-
-                console.log( self.menuAnimTrack.menu );
-                
-                /*else if ( goingUpInHome ) {
-                    
-        
-                }*/
+                }
 
                 self.scrollPos = $( window ).scrollTop();
-            
-
-            
-
         } );
         
     }

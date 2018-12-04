@@ -14,6 +14,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: scroll;
+    scroll-behavior: smooth;
+
 }
 body {
     background: #fc4a1a; /* fallback for old browsers */
@@ -99,14 +101,15 @@ section:nth-of-type(1) {
     left: 20%;
     height: 1%;
     width: 60%;
+    z-index: 1000;
 
     transform-origin: left center;
 
     @include flex-config(row, space-between, center);
-    background: rgba(255, 255, 255, 1);
+    //background: rgba(255, 255, 255, 1);
 
     div {
-        background: rgba(255, 255, 255, 1);
+        //background: blue;
         height: 125px;
         width: 125px;
         border: 5px solid white;
@@ -119,12 +122,12 @@ section:nth-of-type(1) {
             font-family: $primary-font;
             font-size: 90%;
             text-transform: uppercase;
-            color: blue;
+            color: white;
         }
 
         &:hover {
-            background: blue;
-            p { color: white; }
+            background: white;
+            p { color: blue; }
         }
     }
 }
